@@ -1,17 +1,13 @@
 {
     "if": {
-      "allof": [
-        {
-          "field": "type",
-          "equals": "Microsoft.Compute/virtualMachines"
-        },
-        {
-          "field": "[concat('tags[', parameters('tagName'), ']')]",
-          "notEquals": "[parameters('tagValue')]"
-        }
-      ]
+        "allof": [
+            {
+                "field": "[concat('tags[', parameters('tagName'), ']')]",
+                "exists": "false"
+            }
+        ]
     },
     "then": {
-      "effect": "deny"
+        "effect": "deny"
     }
-  }
+}
