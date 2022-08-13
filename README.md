@@ -28,14 +28,14 @@ git clone https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code.git
 (*note: when installing packer on Windows, make sure you also manually include the environment variables in the path so that you can run packer from CLI.)
 1. Create image reseource group using `az group create --location eastus --name packer-rg`.
 2. Create Terraform Service Principle with `az ad sp create-for-rbac --role="Contributor" --name="TerraformSP"` and set the environment variables and Azure Subscription ID as follows:
-···
-echo "Setting environment variables for Terraform"
-export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
-export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
-export ARM_CLIENT_SECRET="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
-echo "Done"
-···
+  
+`echo "Setting environment variables for Terraform"`
+`export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"`
+`export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"`
+`export ARM_CLIENT_SECRET="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"`
+`export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"`
+`echo "Done"`
+  
 3. Create image with `packer build server.json`.
   
     
