@@ -11,11 +11,20 @@ For this project, we will write a Packer template and a Terraform template to de
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-# Clone this repo
+#### Clone this repo
 git clone https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code.git
  
-# Login to Azure CLI
+##### Login to Azure CLI
 `az login`
+  
+### Policy
+  
+### Packer
+  
+### Terraform
+  
+### Deploy
+  
 
 ### Output
 **Your words here**
