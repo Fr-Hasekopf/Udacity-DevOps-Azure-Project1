@@ -19,6 +19,11 @@ git clone https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code.git
   
 ### Policy
   
+1. Create policy that denies creation of resources that do not have tags.
+2. Apply policy to subscription with the name 'tagging-policy'.
+3. Use `az policy assignment list` to show result. 
+
+
 ### Packer
   
 ### Terraform
